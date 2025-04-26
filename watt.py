@@ -20,10 +20,7 @@ from vllm.entrypoints.openai.protocol import (
     ToolCall,
     ExtractedToolCallInformation,
 )
-from vllm.entrypoints.openai.tool_parsers.base import (
-    ToolParser,
-    ToolParserManager,
-)
+from vllm.entrypoints.openai.tool_parsers.abstract_tool_parser import (ToolParser, ToolParserManager)
 
 # ──────────────────────────────────────────────────────────────────────────
 @ToolParserManager.register_module(["new_model_json"])
